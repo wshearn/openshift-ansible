@@ -1,0 +1,46 @@
+---
+- name: Setting list of known Online repos
+  set_fact:
+    - clusters:
+      - int
+      - stage
+
+- name: Remove any yum repo files for other deployment types
+  file:
+    path: "/etc/yum.repos.d/{{ item | basename }}"
+    state: absent
+  with_fileglob:
+  - "{{ openshift_deployment_type }}/{{ openshift_cluster_id }}/repos/*"
+  when: "{{ openshift_cluster_id }} in clusters"
+
+- name: Remove any yum repo files for other deployment types
+  file:
+    path: "/etc/yum.repos.d/{{ item | basename }}"
+    state: absent
+  with_fileglob:
+  - '*/repos/*'
+  when: "not (item | search('/files/' ~ openshift_deployment_type ~ '/repos')) and {{ openshift_cluster_id }} not in clusters"
+
+- name: Configure gpg keys if needed
+  copy: src={{ item }} dest=/etc/pki/rpm-gpg/
+  with_fileglob:
+  - "{{ openshift_deployment_type }}/gpg_keys/*"
+  when: "{{ openshift_cluster_id }} not in clusters"
+
+- name: Configure gpg keys if needed
+  copy: src={{ item }} dest=/etc/pki/rpm-gpg/
+  with_fileglob:
+  - "{{ openshift_deployment_type }}/{{ openshift_cluster_id }}/repos/*"
+  when: "{{ openshift_cluster_id }} in clusters"
+
+- name: Configure yum repositories
+  copy: src={{ item }} dest=/etc/yum.repos.d/
+  with_fileglob:
+  - "{{ openshift_deployment_type }}/repos/*"
+  when: "{{ openshift_cluster_id }} not in clusters"
+
+- name: Configure yum repositories
+  copy: src={{ item }} dest=/etc/yum.repos.d/
+  with_fileglob:
+  - "{{ openshift_deployment_type }}/{{ openshift_cluster_id }}/repos/*"
+  when: "{{ openshift_cluster_id }} in clusters"
