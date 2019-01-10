@@ -25,6 +25,8 @@ items:
       from:
         kind: DockerImage
         name: registry.redhat.io/rhpam-7/rhpam70-businesscentral-openshift:1.0
+      referencePolicy:
+        type: Local
 - kind: ImageStream
   apiVersion: v1
   metadata:
@@ -44,6 +46,8 @@ items:
       from:
         kind: DockerImage
         name: registry.redhat.io/rhpam-7/rhpam70-businesscentral-monitoring-openshift:1.0
+      referencePolicy:
+        type: Local
 - kind: ImageStream
   apiVersion: v1
   metadata:
@@ -63,6 +67,8 @@ items:
       from:
         kind: DockerImage
         name: registry.redhat.io/rhpam-7/rhpam70-controller-openshift:1.0
+      referencePolicy:
+        type: Local
 - kind: ImageStream
   apiVersion: v1
   metadata:
@@ -82,6 +88,8 @@ items:
       from:
         kind: DockerImage
         name: registry.redhat.io/rhpam-7/rhpam70-kieserver-openshift:1.0
+      referencePolicy:
+        type: Local
 - kind: ImageStream
   apiVersion: v1
   metadata:
@@ -101,6 +109,8 @@ items:
       from:
         kind: DockerImage
         name: registry.redhat.io/rhpam-7/rhpam70-smartrouter-openshift:1.0
+      referencePolicy:
+        type: Local
 - kind: ImageStream
   apiVersion: v1
   metadata:
@@ -120,3 +130,5 @@ items:
       from:
         kind: DockerImage
         name: registry.redhat.io/rhpam-7/rhpam70-businesscentral-indexing-openshift:1.0
+      referencePolicy:
+        type: Local

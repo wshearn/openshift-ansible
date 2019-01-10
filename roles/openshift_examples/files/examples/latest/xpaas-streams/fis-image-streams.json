@@ -33,6 +33,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/jboss-fuse-6/fis-java-openshift:1.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     },
                     {
@@ -48,6 +51,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/jboss-fuse-6/fis-java-openshift:2.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     }
                 ]
