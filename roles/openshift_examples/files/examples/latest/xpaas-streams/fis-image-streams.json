@@ -84,6 +84,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-java-openshift:1.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     }
                 ]
@@ -114,6 +117,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/jboss-fuse-6/fis-karaf-openshift:1.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     },
                     {
@@ -129,6 +135,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/jboss-fuse-6/fis-karaf-openshift:2.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     }
                 ]
@@ -159,6 +168,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-karaf-openshift:1.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     }
                 ]
@@ -189,6 +201,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-eap-openshift:1.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     }
                 ]
@@ -219,6 +234,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-console:1.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     }
                 ]
@@ -249,6 +267,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-java-openshift:1.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     },
                     {
@@ -264,6 +285,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-java-openshift:1.1"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     }
                 ]
@@ -294,6 +318,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-karaf-openshift:1.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     },
                     {
@@ -309,6 +336,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-karaf-openshift:1.1"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     }
                 ]
@@ -339,6 +369,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-eap-openshift:1.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     },
                     {
@@ -354,6 +387,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-eap-openshift:1.1"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     }
                 ]
@@ -384,6 +420,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-console:1.0"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     },
                     {
@@ -399,6 +438,9 @@
                         "from": {
                             "kind": "DockerImage",
                             "name": "registry.redhat.io/fuse7/fuse-console:1.1"
+                        },
+                        "referencePolicy": {
+                            "type": "Local"
                         }
                     }
                 ]
